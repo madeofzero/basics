@@ -1,6 +1,6 @@
 {
   "name": "@madeofzero/basics",
-  "description": "",
+  "description": "Tools for builders by builders",
   "version": "0.0.1",
   "type": "module",
   "main": "dist/index.cjs.js",
@@ -9,9 +9,6 @@
   "files": [
     "/dist"
   ],
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/@madeofzero"
-  },
   "scripts": {
     "format": "prettier --write --parser typescript '**/*.{ts,tsx}'",
     "lint": "eslint . --ext .ts,.tsx --ignore-path .gitignore --fix",
