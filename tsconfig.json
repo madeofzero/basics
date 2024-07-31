@@ -7,6 +7,7 @@
       "skipLibCheck": true, // Skips type checking of declaration files.
   
       /* Bundler mode */
+      "noUncheckedIndexedAccess": true,
       "moduleResolution": "bundler", // Specifies how modules are resolved when bundling.
       "allowImportingTsExtensions": true, // Allows importing TypeScript files with extensions.
       "resolveJsonModule": true, // Enables importing JSON modules.
