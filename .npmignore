@@ -1,0 +1,11 @@
+/src
+/node_modules
+
+.env
+.DS_Store
+
+pnpm-lock.yaml
+tailwind.config.js
+tsconfig.json
+vite.config.ts
+.gitignore

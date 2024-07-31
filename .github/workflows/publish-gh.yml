@@ -1,22 +1,28 @@
-name: CI
+name: Publish to Github
+
 on:
   push:
     branches:
-      - "main"
+      - main
 
 jobs:
-  build:
+  publish:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
       - uses: pnpm/action-setup@v2
         with:
           version: 7
+
       - uses: actions/setup-node@v3
         with:
           node-version: 16.x
           cache: "pnpm"
+          registry-url: https://npm.pkg.github.com/
+          scope: "@madeofzero"
 
       - run: pnpm install
       - run: pnpm run build
-      
+      - run: pnpm publish
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}

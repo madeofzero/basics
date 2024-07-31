@@ -1,24 +1,27 @@
 {
-  "name": "@madeofzero/ui",
+  "name": "@bymadeofzero/ui",
   "description": "Tools for builders by builders",
   "version": "0.0.1",
   "type": "module",
   "main": "dist/index.cjs.js",
   "module": "dist/index.es.js",
   "types": "dist/index.d.ts",
+  "homepage": "https://madeofzero.com/",
+  "repository": {
+    "url": "https://github.com/madeofzero/ui"
+  },
   "files": [
     "/dist"
   ],
   "scripts": {
     "lint": "tsc",
-    "build": "pnpm lint && vite build",
-    "prerelease": "pnpm lint",
+    "prebuild": "pnpm lint",
+    "build": "vite build",
     "release": "pnpm build"
   },
   "devDependencies": {
     "@types/react": "18.3.3",
     "react": "18.3.1",
-    "storybook": "^8.2.6",
     "typescript": "5.5.4",
     "vite": "^5.3.5",
     "tailwindcss": "^3.4.7",
