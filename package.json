@@ -15,9 +15,9 @@
   ],
   "scripts": {
     "lint": "tsc",
-    "prebuild": "pnpm lint",
+    "prebuild": "npm run lint",
     "build": "vite build",
-    "release": "pnpm build"
+    "release": "npm run build"
   },
   "devDependencies": {
     "@types/react": "18.3.3",
